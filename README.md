@@ -25,10 +25,10 @@ This project contains the codebase for the Android version that is on Play Store
 </p>
 
 ## How to run
-
 *Note: the assets were replaced by placeholders, so the version you will run locally is different in look than the version in stores.*
+
 ### 1. Firebase Setup
-It's important to put your own Firebase service file in order to run the app, as it uses Remote Config and Firebase Messaging.
+It's important to put your own Firebase service file in order to run the app, as it requires initializing Firebase on launch.
 
 1. Create a [new Firebase project](https://console.firebase.google.com/).
 2. Add a new Android or iOS app, depending on which device you want to use, and follow the configuration steps to connect Noor to your Firebase project.
@@ -40,19 +40,14 @@ It's important to put your own Firebase service file in order to run the app, as
 ### 2. Run
 
 1. Clone the project:
-
 ```bash
 git clone https://github.com/pr-Mais/noor.git
 ```
-
 2. Get packages:
-
 ```bash
 flutter pub get
 ```
-
-4. Run:
-
+3. Start an iOS simulator or Android emulator, or a real device, then run:
 ```bash
 flutter run
 ```
